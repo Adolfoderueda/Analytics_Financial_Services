@@ -1,0 +1,30 @@
+---
+title: "Banking Challenge"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+```{r}
+
+train_data = read.csv("/home/scarface94/Documents/GitHub/Data/challengeTrain.csv", header = TRUE, dec = ".")
+
+test_data = read.csv("/home/scarface94/Documents/GitHub/Data/challengeTest.csv", header = TRUE, dec = ".")
+
+head(train_data)
+head(test_data)
+
+```
+
+
+```{r}
+
+summary(train_data)
+str(train_data)
+is.null(train_data)
+```
+
+
